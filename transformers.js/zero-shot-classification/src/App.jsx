@@ -139,7 +139,7 @@ function App() {
       <div className="flex flex-col justify-center items-center m-2 gap-2">
         <button
           type="button"
-          className={`border py-2 px-4 rounded text-white text-lg font-medium ${
+          className={`border py-2 px-4 rounded text-black text-lg font-medium ${
             busy
               ? 'bg-gray-400 cursor-not-allowed'
               : ''
@@ -155,7 +155,7 @@ function App() {
         </button>
         <button
           type="button"
-          className="border py-1 px-3  rounded text-white text-sm font-medium"
+          className="border py-1 px-3  rounded text-black text-sm font-medium"
           onClick={() => {
             setSections((prevSections) =>
               prevSections.map((section) => ({
