@@ -18,8 +18,6 @@ To set up the project locally:
    ```bash
    git clone https://github.com/Atrozy/zeroshotprompting.git
 
-# Clone the repository
-git clone https://github.com/Atrozy/zeroshotprompting.git
 
 # Navigate to the project directory
    ```bash
