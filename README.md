@@ -1,8 +1,8 @@
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Atrozy/zeroshotprompting.git
 
 # Navigate to the project directory
-cd your-repo-name
+cd zeroshotprompting
 
 # Install dependencies
 npm install
