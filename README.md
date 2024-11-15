@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/42e117ff-9801-4f80-bc27-d046b983181c)
 
 # Zero-Shot Prompting
 
