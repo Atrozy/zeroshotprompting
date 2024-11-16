@@ -133,7 +133,13 @@ function App() {
         <button
           type="button"
           className={`border py-2 px-4 rounded text-black text-lg font-medium ${
+<<<<<<< HEAD:transformers.js/zero-shot-classification/src/App.tsx
             busy ? 'bg-gray-400 cursor-not-allowed' : ''
+=======
+            busy
+              ? 'bg-gray-400 cursor-not-allowed'
+              : ''
+>>>>>>> 8ecd9940f9f11b6aa12651a6b0c4fda91c78dca7:transformers.js/zero-shot-classification/src/App.jsx
           }`}
           disabled={busy}
           onClick={classify}
@@ -146,8 +152,13 @@ function App() {
         </button>
         <button
           type="button"
+<<<<<<< HEAD:transformers.js/zero-shot-classification/src/App.tsx
           className="border py-1 px-3 rounded text-black text-sm font-medium"
           onClick={() =>
+=======
+          className="border py-1 px-3  rounded text-black text-sm font-medium"
+          onClick={() => {
+>>>>>>> 8ecd9940f9f11b6aa12651a6b0c4fda91c78dca7:transformers.js/zero-shot-classification/src/App.jsx
             setSections((prevSections) =>
               prevSections.map((section) => ({ ...section, items: [] }))
             )
