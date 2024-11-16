@@ -6,7 +6,7 @@ env.allowLocalModels = false;
 
 class MyZeroShotClassificationPipeline {
   static task = 'zero-shot-classification';
-  static model = 'MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33';
+  static model = 'Xenova/mobilebert-uncased-mnli';
   static instance = null;
 
   static async getInstance(progress_callback = null) {
