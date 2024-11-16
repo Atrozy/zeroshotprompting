@@ -151,7 +151,7 @@ const threshold = 0.2; // Set a threshold for classification
 
 ## Hardware Considerations
 - **CPU Performance**: Faster CPUs will reduce classification time.
-- **Browser Choice**: Modern browsers with efficient JavaScript engines (e.g., Chrome, Edge) offer better performance.
+- **Browser Choice**: Modern browsers with efficient TypeScript engines (e.g., Chrome, Edge) offer better performance.
 - **Memory (RAM)**: Adequate RAM ensures smooth operation without swapping to disk.
 
 ## Batch Processing
@@ -161,5 +161,5 @@ const threshold = 0.2; // Set a threshold for classification
 ## Known Issues
 - **Initial Loading Time**: The first-time model loading can be slow due to downloading and initializing the model.
 - **Memory Usage**: Loading transformer models can be memory-intensive.
-- **Browser Compatibility**: Ensure you use a browser that supports Web Workers and modern JavaScript features.
+- **Browser Compatibility**: Ensure you use a browser that supports Web Workers and modern TypeScript features.
 
