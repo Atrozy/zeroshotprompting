@@ -84,22 +84,20 @@ zero-shot-text-classification/
 ├── public/
 │   └── index.html
 ├── src/
-│   ├── App.js
-│   ├── worker.js
-│   ├── index.js
+│   ├── App.csx
+│   ├── worker.ts
 │   ├── index.css
-│   └── App.css
+│   ├── index.tsx
+│   └── App.tsx
 ├── package.json
 ├── package-lock.json
 └── README.md
 ```
 ```
 ## Key Files:
-- **App.js**: Main React component that renders the user interface and handles interaction with the web worker.
-- **worker.js**: Web Worker script that loads the model and performs text classification.
-- **index.js**: Entry point of the React application.
+- **worker.ts**: Web Worker script that loads the model and performs text classification.
 - **index.html**: The HTML template for the application.
-- **App.css** and **index.css**: Stylesheets for the application.
+- **App.tsx** and **index.tsx**: Stylesheets for the application.
 
 # Technical Details
 ## Zero-Shot Classification Model
@@ -108,7 +106,7 @@ zero-shot-text-classification/
 - **Quantization**: Enabled for reduced model size and faster inference.
 
 ## Web Workers
-- **Implementation**: The worker.js file sets up a worker that loads the model and performs classification .
+- **Implementation**: The worker.ts file sets up a worker that loads the model and performs classification .
 
 ## Client-Side Inference
 - **Model Loading**: The model is downloaded and cached in the browser upon first use.
@@ -145,8 +143,7 @@ const threshold = 0.2; // Set a threshold for classification
 - **Modification**: Adjust the value between 0 and 1 as needed.
 
 ### Styling
-- **CSS Files**: Modify App.css and index.css to change the appearance of the application.
-- **Inline Styles**: You can also adjust styles directly in the JSX elements if preferred.
+- **Inline Styles**: You can also adjust styles directly in the TSX elements if preferred.
 
 ## Performance Optimization
 ### Model Quantization
@@ -159,7 +156,7 @@ const threshold = 0.2; // Set a threshold for classification
 
 ## Batch Processing
 - **Current Implementation**: Texts are processed individually in a loop.
-- **Potential Improvement**: Modify worker.js to perform batch inference if supported by the model.
+- **Potential Improvement**: Modify worker.ts to perform batch inference if supported by the model.
 
 ## Known Issues
 - **Initial Loading Time**: The first-time model loading can be slow due to downloading and initializing the model.
